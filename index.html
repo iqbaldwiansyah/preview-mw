@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
             --accent-2: #8b5cf6;
             --accent-3: #ec4899;
         }
+
         body {
             margin: 0;
             padding: 0;
@@ -22,18 +24,20 @@
             background: var(--bg-color);
             color: var(--text-main);
             min-height: 100vh;
-            background-image: 
+            background-image:
                 radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
                 radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.15) 0px, transparent 50%);
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         header {
             padding: 3rem 1rem 2rem;
             text-align: center;
             width: 100%;
         }
+
         h1 {
             font-size: 2.8rem;
             font-weight: 800;
@@ -41,8 +45,9 @@
             background: linear-gradient(to right, var(--accent-1), var(--accent-3));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
+
         p.subtitle {
             color: var(--text-muted);
             margin-top: 0.8rem;
@@ -51,6 +56,7 @@
             margin-left: auto;
             margin-right: auto;
         }
+
         .container {
             display: flex;
             flex-wrap: wrap;
@@ -61,6 +67,7 @@
             box-sizing: border-box;
             justify-content: center;
         }
+
         .column {
             flex: 1;
             min-width: 320px;
@@ -68,48 +75,54 @@
             flex-direction: column;
             gap: 1.5rem;
         }
+
         .video-container {
             width: 100%;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             background: #000;
             position: relative;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .video-container:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 50px rgba(59, 130, 246, 0.2);
         }
+
         video {
             width: 100%;
             display: block;
             outline: none;
         }
+
         .video-title {
             padding: 1.2rem;
             background: var(--card-bg);
             backdrop-filter: blur(10px);
-            border-top: 1px solid rgba(255,255,255,0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
             text-align: center;
             font-weight: 600;
             letter-spacing: 1.5px;
             text-transform: uppercase;
             color: #e2e8f0;
         }
+
         .list-container {
             background: var(--card-bg);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255,255,255,0.08);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 16px;
             padding: 1.5rem;
             flex-grow: 1;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             height: 500px;
             display: flex;
             flex-direction: column;
         }
+
         .list-title {
             font-size: 1.2rem;
             margin-top: 0;
@@ -117,10 +130,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding-bottom: 1rem;
             flex-shrink: 0;
         }
+
         .badge {
             background: rgba(59, 130, 246, 0.2);
             color: #60a5fa;
@@ -130,30 +144,37 @@
             font-weight: 600;
             letter-spacing: 0.5px;
         }
+
         .badge-gift {
             background: rgba(236, 72, 153, 0.2);
             color: #f472b6;
         }
+
         .scroll-area {
             overflow-y: auto;
             padding-right: 5px;
             flex-grow: 1;
         }
+
         /* Custom Scrollbar */
         .scroll-area::-webkit-scrollbar {
             width: 6px;
         }
+
         .scroll-area::-webkit-scrollbar-track {
-            background: rgba(0,0,0,0.2);
+            background: rgba(0, 0, 0, 0.2);
             border-radius: 10px;
         }
+
         .scroll-area::-webkit-scrollbar-thumb {
-            background: rgba(255,255,255,0.15);
+            background: rgba(255, 255, 255, 0.15);
             border-radius: 10px;
         }
+
         .scroll-area::-webkit-scrollbar-thumb:hover {
-            background: rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.3);
         }
+
         .effect-list {
             list-style: none;
             padding: 0;
@@ -162,9 +183,10 @@
             flex-direction: column;
             gap: 0.5rem;
         }
+
         .effect-item {
             padding: 0.8rem 1rem;
-            background: rgba(0,0,0,0.25);
+            background: rgba(0, 0, 0, 0.25);
             border-radius: 10px;
             transition: all 0.2s ease;
             display: flex;
@@ -172,33 +194,38 @@
             gap: 1rem;
             border: 1px solid transparent;
         }
+
         .effect-item:hover {
-            background: rgba(255,255,255,0.05);
-            border-color: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.1);
             transform: translateX(5px);
         }
+
         .effect-index {
             color: var(--text-muted);
             font-size: 0.85rem;
             min-width: 24px;
             font-weight: 600;
         }
+
         .effect-name {
             font-weight: 500;
             font-size: 0.95rem;
             color: #cbd5e1;
         }
-        
+
         @media (max-width: 860px) {
             .container {
                 flex-direction: column;
             }
+
             .list-container {
                 height: 400px;
             }
         }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -211,12 +238,12 @@
         <div class="column">
             <div class="video-container">
                 <video controls preload="metadata">
-                    <source src="numpad.mp4" type="video/mp4">
+                    <source src="gift.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div class="video-title">Numpad Showcase</div>
             </div>
-            
+
             <div class="list-container">
                 <h2 class="list-title">
                     <span>Numpad Effects</span>
@@ -224,107 +251,107 @@
                 </h2>
                 <div class="scroll-area">
                     <ul class="effect-list">
-                        
-        <li class="effect-item">
-            <span class="effect-index">1.</span>
-            <span class="effect-name">Ngeluarin Bigsmoke yang nembak mobil kita 1x</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">2.</span>
-            <span class="effect-name">Mobil Ngeloncat Sekali</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">3.</span>
-            <span class="effect-name">Ngeluarin Ramp (Jempingan)</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">4.</span>
-            <span class="effect-name">Mobil dikendaliin AI (durasi atur sendiri)</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">5.</span>
-            <span class="effect-name">Mobil Besar</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">6.</span>
-            <span class="effect-name">Camera Frezze (durasi atur sendiri)</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">7.</span>
-            <span class="effect-name">Jadi Motor Sanchez (motornya CJ di GTA SA)</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">8.</span>
-            <span class="effect-name">Ngeluarin Item Nos yang buat Nos jadi Auto Full</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">9.</span>
-            <span class="effect-name">Camera GTA 2(cameranya dari atas)</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">10.</span>
-            <span class="effect-name">Graphic Error</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">11.</span>
-            <span class="effect-name">Meja Kaget</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">12.</span>
-            <span class="effect-name">Munculin Bubble</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">13.</span>
-            <span class="effect-name">Ban Depan Kanan Pecah</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">14.</span>
-            <span class="effect-name">Mental Kebelakang</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">15.</span>
-            <span class="effect-name">Bouncy Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">16.</span>
-            <span class="effect-name">Jadi Pesawat CJ , gerakin wajib pakai numpad</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">17.</span>
-            <span class="effect-name">Mobil Auto Rusak , blown Engine</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">18.</span>
-            <span class="effect-name">Auto Balik Ke Garasi</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">19.</span>
-            <span class="effect-name">Ban Pecah Semua</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">20.</span>
-            <span class="effect-name">Teleport ke Old Bridge</span>
-        </li>
-    
+
+                        <li class="effect-item">
+                            <span class="effect-index">1.</span>
+                            <span class="effect-name">Ngeluarin Bigsmoke yang nembak mobil kita 1x</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">2.</span>
+                            <span class="effect-name">Mobil Ngeloncat Sekali</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">3.</span>
+                            <span class="effect-name">Ngeluarin Ramp (Jempingan)</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">4.</span>
+                            <span class="effect-name">Mobil dikendaliin AI (durasi atur sendiri)</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">5.</span>
+                            <span class="effect-name">Mobil Besar</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">6.</span>
+                            <span class="effect-name">Camera Frezze (durasi atur sendiri)</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">7.</span>
+                            <span class="effect-name">Jadi Motor Sanchez (motornya CJ di GTA SA)</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">8.</span>
+                            <span class="effect-name">Ngeluarin Item Nos yang buat Nos jadi Auto Full</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">9.</span>
+                            <span class="effect-name">Camera GTA 2(cameranya dari atas)</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">10.</span>
+                            <span class="effect-name">Graphic Error</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">11.</span>
+                            <span class="effect-name">Meja Kaget</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">12.</span>
+                            <span class="effect-name">Munculin Bubble</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">13.</span>
+                            <span class="effect-name">Ban Depan Kanan Pecah</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">14.</span>
+                            <span class="effect-name">Mental Kebelakang</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">15.</span>
+                            <span class="effect-name">Bouncy Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">16.</span>
+                            <span class="effect-name">Jadi Pesawat CJ , gerakin wajib pakai numpad</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">17.</span>
+                            <span class="effect-name">Mobil Auto Rusak , blown Engine</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">18.</span>
+                            <span class="effect-name">Auto Balik Ke Garasi</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">19.</span>
+                            <span class="effect-name">Ban Pecah Semua</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">20.</span>
+                            <span class="effect-name">Teleport ke Old Bridge</span>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -334,12 +361,12 @@
         <div class="column">
             <div class="video-container">
                 <video controls preload="metadata">
-                    <source src="gift.mp4" type="video/mp4">
+                    <source src="numpad.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div class="video-title">Gift Showcase</div>
             </div>
-            
+
             <div class="list-container">
                 <h2 class="list-title">
                     <span>Interactive Gift Effects</span>
@@ -347,1257 +374,1257 @@
                 </h2>
                 <div class="scroll-area">
                     <ul class="effect-list">
-                        
-        <li class="effect-item">
-            <span class="effect-index">1.</span>
-            <span class="effect-name">Destroy Random Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">2.</span>
-            <span class="effect-name">Magnet On Random Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">3.</span>
-            <span class="effect-name">Forcefield On Random Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">4.</span>
-            <span class="effect-name">Bouncy Cars</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">5.</span>
-            <span class="effect-name">Tumbling Cars</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">6.</span>
-            <span class="effect-name">Flippy Cars</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">7.</span>
-            <span class="effect-name">Cars Float Away</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">8.</span>
-            <span class="effect-name">Cars Wreck When Flipped</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">9.</span>
-            <span class="effect-name">Hosted by Cloudflare</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">10.</span>
-            <span class="effect-name">Lag For All Other Cars</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">11.</span>
-            <span class="effect-name">Snake</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">12.</span>
-            <span class="effect-name">Bouncy Mod</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">13.</span>
-            <span class="effect-name">Wide Cars</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">14.</span>
-            <span class="effect-name">Why's This Dealer?</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">15.</span>
-            <span class="effect-name">Teleport All Cars To Player</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">16.</span>
-            <span class="effect-name">Snap To Grid</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">17.</span>
-            <span class="effect-name">Low Quality Movement</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">18.</span>
-            <span class="effect-name">Cars Stare At You</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">19.</span>
-            <span class="effect-name">Staredown</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">20.</span>
-            <span class="effect-name">Invisible Cars</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">21.</span>
-            <span class="effect-name">Fragile Cars</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">22.</span>
-            <span class="effect-name">Blind</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">23.</span>
-            <span class="effect-name">Flashbang</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">24.</span>
-            <span class="effect-name">Portrait Mode</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">25.</span>
-            <span class="effect-name">4:3 Letterboxed</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">26.</span>
-            <span class="effect-name">Widescreen Borders</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">27.</span>
-            <span class="effect-name">Fake Crash</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">28.</span>
-            <span class="effect-name">Real Frame Drops</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">29.</span>
-            <span class="effect-name">10% Chance Of Game Crash</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">30.</span>
-            <span class="effect-name">Nothing Happens</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">31.</span>
-            <span class="effect-name">Chess Board</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">32.</span>
-            <span class="effect-name">Disable Chaos Mod HUD</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">33.</span>
-            <span class="effect-name">Punch-Hole</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">34.</span>
-            <span class="effect-name">Chaos For Your Chaos</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">35.</span>
-            <span class="effect-name">Pursuit Breaker Sound Effect</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">36.</span>
-            <span class="effect-name">Occasional Backstreet Boys</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">37.</span>
-            <span class="effect-name">Activate 10 Effects</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">38.</span>
-            <span class="effect-name">Refill Effect Timers</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">39.</span>
-            <span class="effect-name">Chaos Mod Credits</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">40.</span>
-            <span class="effect-name">Gran Turismo Camera</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">41.</span>
-            <span class="effect-name">Freeze Camera</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">42.</span>
-            <span class="effect-name">Second Person View</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">43.</span>
-            <span class="effect-name">Helicopter Camera</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">44.</span>
-            <span class="effect-name">Wheel Camera</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">45.</span>
-            <span class="effect-name">Cinematic Camera</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">46.</span>
-            <span class="effect-name">Top-Down Camera</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">47.</span>
-            <span class="effect-name">Bottom-Up Camera</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">48.</span>
-            <span class="effect-name">Forced Rear View</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">49.</span>
-            <span class="effect-name">Challenge Series Camera</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">50.</span>
-            <span class="effect-name">New Opponents Are M3 GTRs</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">51.</span>
-            <span class="effect-name">New Opponents Are Golfs</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">52.</span>
-            <span class="effect-name">New Opponents Copy Your Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">53.</span>
-            <span class="effect-name">New Opponents Steal Your Cars</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">54.</span>
-            <span class="effect-name">New Opponents Are Junkman</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">55.</span>
-            <span class="effect-name">Spawn Player As Random Cop Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">56.</span>
-            <span class="effect-name">Spawn Player As Random Traffic Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">57.</span>
-            <span class="effect-name">Spawn Player As Stock Punto</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">58.</span>
-            <span class="effect-name">It's Pizza Time</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">59.</span>
-            <span class="effect-name">Change Car To Razor's Mustang</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">60.</span>
-            <span class="effect-name">Change Car To Random Rare Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">61.</span>
-            <span class="effect-name">Change Car To Random Model</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">62.</span>
-            <span class="effect-name">Change Car To AI Traffic/Police Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">63.</span>
-            <span class="effect-name">Grand Theft Auto</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">64.</span>
-            <span class="effect-name">Disable Everything</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">65.</span>
-            <span class="effect-name">Forza Rewind</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">66.</span>
-            <span class="effect-name">Quick-Time Event</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">67.</span>
-            <span class="effect-name">Exit To Main Menu</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">68.</span>
-            <span class="effect-name">Tik Tok Mode</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">69.</span>
-            <span class="effect-name">Leaking Fuel Tank</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">70.</span>
-            <span class="effect-name">Refuel Player Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">71.</span>
-            <span class="effect-name">Realistic Fuel Prices</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">72.</span>
-            <span class="effect-name">Drag HUD</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">73.</span>
-            <span class="effect-name">Disable HUD</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">74.</span>
-            <span class="effect-name">Constant Pausing</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">75.</span>
-            <span class="effect-name">Disable Pausing</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">76.</span>
-            <span class="effect-name">FlatOut Style HUD</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">77.</span>
-            <span class="effect-name">Blow One Opponent's Engine</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">78.</span>
-            <span class="effect-name">Launch Opponents Backwards</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">79.</span>
-            <span class="effect-name">Launch Opponents Sideways</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">80.</span>
-            <span class="effect-name">Launch Opponents Up</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">81.</span>
-            <span class="effect-name">Spinning Opponents</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">82.</span>
-            <span class="effect-name">FUCKING RUBBERBAND</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">83.</span>
-            <span class="effect-name">Disable Rubberbanding</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">84.</span>
-            <span class="effect-name">Realistic Opponent Performance</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">85.</span>
-            <span class="effect-name">Puncture Opponents' Tires</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">86.</span>
-            <span class="effect-name">Zero Opponent Mass</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">87.</span>
-            <span class="effect-name">Pittable Opponents</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">88.</span>
-            <span class="effect-name">Disable Opponents' Nitro</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">89.</span>
-            <span class="effect-name">Lock Opponents In Place</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">90.</span>
-            <span class="effect-name">Break Tire Physics</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">91.</span>
-            <span class="effect-name">Remove All Tires</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">92.</span>
-            <span class="effect-name">Disable Wall Collision</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">93.</span>
-            <span class="effect-name">Disable World Collision</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">94.</span>
-            <span class="effect-name">Disable Car To Car Collision</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">95.</span>
-            <span class="effect-name">Stop Player Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">96.</span>
-            <span class="effect-name">Launch Player Forward</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">97.</span>
-            <span class="effect-name">Launch Player Backwards</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">98.</span>
-            <span class="effect-name">Launch Player Sideways</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">99.</span>
-            <span class="effect-name">Launch Player Leftways</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">100.</span>
-            <span class="effect-name">Launch Player Up</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">101.</span>
-            <span class="effect-name">Launch Player Down</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">102.</span>
-            <span class="effect-name">Spin Player Out</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">103.</span>
-            <span class="effect-name">Spin Player Rapidly</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">104.</span>
-            <span class="effect-name">Infinite Speedbreaker</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">105.</span>
-            <span class="effect-name">Infinite Player Nitro</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">106.</span>
-            <span class="effect-name">Disable Speedbreaker</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">107.</span>
-            <span class="effect-name">Disable Player Nitro</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">108.</span>
-            <span class="effect-name">Set Heat Level to 1</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">109.</span>
-            <span class="effect-name">Set Heat Level to 6</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">110.</span>
-            <span class="effect-name">Decrease Heat Level</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">111.</span>
-            <span class="effect-name">Increase Heat Level</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">112.</span>
-            <span class="effect-name">Blow Player's Engine</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">113.</span>
-            <span class="effect-name">Auto-Drive</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">114.</span>
-            <span class="effect-name">Spain but the A is silent</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">115.</span>
-            <span class="effect-name">Aerodynamics +100</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">116.</span>
-            <span class="effect-name">Handling +10</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">117.</span>
-            <span class="effect-name">Handling -10</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">118.</span>
-            <span class="effect-name">Monster Truck Suspension</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">119.</span>
-            <span class="effect-name">Bouncy Suspension</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">120.</span>
-            <span class="effect-name">Weak Nitro</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">121.</span>
-            <span class="effect-name">Strong Nitro</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">122.</span>
-            <span class="effect-name">Reset Player</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">123.</span>
-            <span class="effect-name">Puncture One Player Tire</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">124.</span>
-            <span class="effect-name">Puncture Player's Tires</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">125.</span>
-            <span class="effect-name">Fix Player's Tires</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">126.</span>
-            <span class="effect-name">Disable Resetting</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">127.</span>
-            <span class="effect-name">Disable Instant Bust On Reset</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">128.</span>
-            <span class="effect-name">Player Car Magnet</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">129.</span>
-            <span class="effect-name">Player Car Forcefield</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">130.</span>
-            <span class="effect-name">Disable Player Input</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">131.</span>
-            <span class="effect-name">Force Player To Gear 1</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">132.</span>
-            <span class="effect-name">Top Gear</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">133.</span>
-            <span class="effect-name">Force Player To Reverse Gear</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">134.</span>
-            <span class="effect-name">Juggernaut</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">135.</span>
-            <span class="effect-name">Zero Player Mass</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">136.</span>
-            <span class="effect-name">Piggyback Ride</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">137.</span>
-            <span class="effect-name">Lock Player In Place</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">138.</span>
-            <span class="effect-name">Lock Player Rotation</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">139.</span>
-            <span class="effect-name">Swap Places With Random Opponent</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">140.</span>
-            <span class="effect-name">Disable Player Physics</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">141.</span>
-            <span class="effect-name">Broken Steering Wheel</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">142.</span>
-            <span class="effect-name">Half-Broken Steering Wheel</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">143.</span>
-            <span class="effect-name">Half-Broken Throttle</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">144.</span>
-            <span class="effect-name">Connection Problem</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">145.</span>
-            <span class="effect-name">Teleport To Perfect Hiding Spot</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">146.</span>
-            <span class="effect-name">Teleport Behind The Old Bridge</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">147.</span>
-            <span class="effect-name">Nitro Boosting</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">148.</span>
-            <span class="effect-name">Cruise Control</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">149.</span>
-            <span class="effect-name">Skyfall</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">150.</span>
-            <span class="effect-name">Heated Steering</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">151.</span>
-            <span class="effect-name">Need For Speed</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">152.</span>
-            <span class="effect-name">ChatGPT Take The Wheel</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">153.</span>
-            <span class="effect-name">Forced Speedbreaker</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">154.</span>
-            <span class="effect-name">Enable Game Moment Camera</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">155.</span>
-            <span class="effect-name">Disable Autosave</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">156.</span>
-            <span class="effect-name">Disable Visual Treatment</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">157.</span>
-            <span class="effect-name">Millionaire</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">158.</span>
-            <span class="effect-name">Anti-Millionaire</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">159.</span>
-            <span class="effect-name">Force Manual Transmission</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">160.</span>
-            <span class="effect-name">Force Automatic Transmission</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">161.</span>
-            <span class="effect-name">Randomize Active Car's Visuals</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">162.</span>
-            <span class="effect-name">Add A Strike To Active Career Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">163.</span>
-            <span class="effect-name">Add A Random Tuning Marker</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">164.</span>
-            <span class="effect-name">Add A Random Bonus Marker</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">165.</span>
-            <span class="effect-name">Skip Current Song</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">166.</span>
-            <span class="effect-name">Overwrite Active Career Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">167.</span>
-            <span class="effect-name">Add 100K Bounty</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">168.</span>
-            <span class="effect-name">Subtract 100K Bounty</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">169.</span>
-            <span class="effect-name">Trigger Police Pursuit</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">170.</span>
-            <span class="effect-name">Add 100K Cost To State</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">171.</span>
-            <span class="effect-name">Never Busted</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">172.</span>
-            <span class="effect-name">Disable Cops</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">173.</span>
-            <span class="effect-name">Disable Hiding Spots</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">174.</span>
-            <span class="effect-name">Infinite Cop Mass</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">175.</span>
-            <span class="effect-name">25% Chance Of Getting Busted</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">176.</span>
-            <span class="effect-name">EVERYONE!!!</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">177.</span>
-            <span class="effect-name">It's Cross</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">178.</span>
-            <span class="effect-name">Duh Busted</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">179.</span>
-            <span class="effect-name">Disable Cop Spawning</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">180.</span>
-            <span class="effect-name">Invincible Player Tires</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">181.</span>
-            <span class="effect-name">Invincible Cops</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">182.</span>
-            <span class="effect-name">Cop Jenga Tower</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">183.</span>
-            <span class="effect-name">Cops Drop Cash</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">184.</span>
-            <span class="effect-name">Remove A Lap</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">185.</span>
-            <span class="effect-name">Add A Lap</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">186.</span>
-            <span class="effect-name">Add 3 Laps</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">187.</span>
-            <span class="effect-name">Restart Event</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">188.</span>
-            <span class="effect-name">Disable Race Barriers</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">189.</span>
-            <span class="effect-name">False Starts</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">190.</span>
-            <span class="effect-name">Exit To Menu At 99% Completion</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">191.</span>
-            <span class="effect-name">Sudden Death</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">192.</span>
-            <span class="effect-name">Midnight Club Mode</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">193.</span>
-            <span class="effect-name">Friends Of Blahaj</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">194.</span>
-            <span class="effect-name">Become Fish</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">195.</span>
-            <span class="effect-name">Pep</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">196.</span>
-            <span class="effect-name">Bucket-Ass Car</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">197.</span>
-            <span class="effect-name">Not A Cat</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">198.</span>
-            <span class="effect-name">Seriously Weak, Dude</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">199.</span>
-            <span class="effect-name">British</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">200.</span>
-            <span class="effect-name">Pixelate The Screen</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">201.</span>
-            <span class="effect-name">Disco Time</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">202.</span>
-            <span class="effect-name">High Contrast</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">203.</span>
-            <span class="effect-name">Low Contrast</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">204.</span>
-            <span class="effect-name">Inverted Colors</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">205.</span>
-            <span class="effect-name">Da Ba Dee</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">206.</span>
-            <span class="effect-name">4:3 Stretched</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">207.</span>
-            <span class="effect-name">Tunnel Vision</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">208.</span>
-            <span class="effect-name">Meanwhile In Australia</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">209.</span>
-            <span class="effect-name">Black & White</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">210.</span>
-            <span class="effect-name">Saturate The Screen</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">211.</span>
-            <span class="effect-name">Where's My Glasses?</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">212.</span>
-            <span class="effect-name">Drunk Mode</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">213.</span>
-            <span class="effect-name">Obligatory Truck Effect</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">214.</span>
-            <span class="effect-name">Pepega Bug (Only for BLID NFSMW)</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">215.</span>
-            <span class="effect-name">pee.</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">216.</span>
-            <span class="effect-name">Spawn SCP-173</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">217.</span>
-            <span class="effect-name">Spawn SCP-173 Somewhere</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">218.</span>
-            <span class="effect-name">8 Down</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">219.</span>
-            <span class="effect-name">Spawn Bomb Behind Player</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">220.</span>
-            <span class="effect-name">Give Player Firework Rockets</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">221.</span>
-            <span class="effect-name">Trans Rights</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">222.</span>
-            <span class="effect-name">Reverse Text</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">223.</span>
-            <span class="effect-name">Random Text</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">224.</span>
-            <span class="effect-name">Shuffled Letters</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">225.</span>
-            <span class="effect-name">Cocksbot</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">226.</span>
-            <span class="effect-name">Slow Motion</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">227.</span>
-            <span class="effect-name">Fast Motion</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">228.</span>
-            <span class="effect-name">Reverse Superhot</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">229.</span>
-            <span class="effect-name">Real-Time Speedbreaker</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">230.</span>
-            <span class="effect-name">Racer AI For Traffic</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">231.</span>
-            <span class="effect-name">Lobotomized Traffic</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">232.</span>
-            <span class="effect-name">Spinning Traffic</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">233.</span>
-            <span class="effect-name">Infinite Traffic Mass</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">234.</span>
-            <span class="effect-name">Disable Traffic</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">235.</span>
-            <span class="effect-name">Disable Saving Until Next Profile Reload</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">236.</span>
-            <span class="effect-name">Get Busted</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">237.</span>
-            <span class="effect-name">Respawn Props And Pursuit Breakers</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">238.</span>
-            <span class="effect-name">Invisible World</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">239.</span>
-            <span class="effect-name">Wireframe Mode</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">240.</span>
-            <span class="effect-name">Wireframe World</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">241.</span>
-            <span class="effect-name">Laser-Scanned World</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">242.</span>
-            <span class="effect-name">Slippery World</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">243.</span>
-            <span class="effect-name">Grippy World</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">244.</span>
-            <span class="effect-name">Disable Buildings</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">245.</span>
-            <span class="effect-name">Inception</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">246.</span>
-            <span class="effect-name">Acid Trip</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">247.</span>
-            <span class="effect-name">Rainbow Road</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">248.</span>
-            <span class="effect-name">Snowy World</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">249.</span>
-            <span class="effect-name">Uninstall Counter-Strike: Source</span>
-        </li>
-    
-        <li class="effect-item">
-            <span class="effect-index">250.</span>
-            <span class="effect-name">Aduh, Cantiknya</span>
-        </li>
-    
+
+                        <li class="effect-item">
+                            <span class="effect-index">1.</span>
+                            <span class="effect-name">Destroy Random Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">2.</span>
+                            <span class="effect-name">Magnet On Random Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">3.</span>
+                            <span class="effect-name">Forcefield On Random Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">4.</span>
+                            <span class="effect-name">Bouncy Cars</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">5.</span>
+                            <span class="effect-name">Tumbling Cars</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">6.</span>
+                            <span class="effect-name">Flippy Cars</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">7.</span>
+                            <span class="effect-name">Cars Float Away</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">8.</span>
+                            <span class="effect-name">Cars Wreck When Flipped</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">9.</span>
+                            <span class="effect-name">Hosted by Cloudflare</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">10.</span>
+                            <span class="effect-name">Lag For All Other Cars</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">11.</span>
+                            <span class="effect-name">Snake</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">12.</span>
+                            <span class="effect-name">Bouncy Mod</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">13.</span>
+                            <span class="effect-name">Wide Cars</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">14.</span>
+                            <span class="effect-name">Why's This Dealer?</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">15.</span>
+                            <span class="effect-name">Teleport All Cars To Player</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">16.</span>
+                            <span class="effect-name">Snap To Grid</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">17.</span>
+                            <span class="effect-name">Low Quality Movement</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">18.</span>
+                            <span class="effect-name">Cars Stare At You</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">19.</span>
+                            <span class="effect-name">Staredown</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">20.</span>
+                            <span class="effect-name">Invisible Cars</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">21.</span>
+                            <span class="effect-name">Fragile Cars</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">22.</span>
+                            <span class="effect-name">Blind</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">23.</span>
+                            <span class="effect-name">Flashbang</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">24.</span>
+                            <span class="effect-name">Portrait Mode</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">25.</span>
+                            <span class="effect-name">4:3 Letterboxed</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">26.</span>
+                            <span class="effect-name">Widescreen Borders</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">27.</span>
+                            <span class="effect-name">Fake Crash</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">28.</span>
+                            <span class="effect-name">Real Frame Drops</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">29.</span>
+                            <span class="effect-name">10% Chance Of Game Crash</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">30.</span>
+                            <span class="effect-name">Nothing Happens</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">31.</span>
+                            <span class="effect-name">Chess Board</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">32.</span>
+                            <span class="effect-name">Disable Chaos Mod HUD</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">33.</span>
+                            <span class="effect-name">Punch-Hole</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">34.</span>
+                            <span class="effect-name">Chaos For Your Chaos</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">35.</span>
+                            <span class="effect-name">Pursuit Breaker Sound Effect</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">36.</span>
+                            <span class="effect-name">Occasional Backstreet Boys</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">37.</span>
+                            <span class="effect-name">Activate 10 Effects</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">38.</span>
+                            <span class="effect-name">Refill Effect Timers</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">39.</span>
+                            <span class="effect-name">Chaos Mod Credits</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">40.</span>
+                            <span class="effect-name">Gran Turismo Camera</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">41.</span>
+                            <span class="effect-name">Freeze Camera</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">42.</span>
+                            <span class="effect-name">Second Person View</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">43.</span>
+                            <span class="effect-name">Helicopter Camera</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">44.</span>
+                            <span class="effect-name">Wheel Camera</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">45.</span>
+                            <span class="effect-name">Cinematic Camera</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">46.</span>
+                            <span class="effect-name">Top-Down Camera</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">47.</span>
+                            <span class="effect-name">Bottom-Up Camera</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">48.</span>
+                            <span class="effect-name">Forced Rear View</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">49.</span>
+                            <span class="effect-name">Challenge Series Camera</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">50.</span>
+                            <span class="effect-name">New Opponents Are M3 GTRs</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">51.</span>
+                            <span class="effect-name">New Opponents Are Golfs</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">52.</span>
+                            <span class="effect-name">New Opponents Copy Your Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">53.</span>
+                            <span class="effect-name">New Opponents Steal Your Cars</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">54.</span>
+                            <span class="effect-name">New Opponents Are Junkman</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">55.</span>
+                            <span class="effect-name">Spawn Player As Random Cop Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">56.</span>
+                            <span class="effect-name">Spawn Player As Random Traffic Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">57.</span>
+                            <span class="effect-name">Spawn Player As Stock Punto</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">58.</span>
+                            <span class="effect-name">It's Pizza Time</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">59.</span>
+                            <span class="effect-name">Change Car To Razor's Mustang</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">60.</span>
+                            <span class="effect-name">Change Car To Random Rare Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">61.</span>
+                            <span class="effect-name">Change Car To Random Model</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">62.</span>
+                            <span class="effect-name">Change Car To AI Traffic/Police Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">63.</span>
+                            <span class="effect-name">Grand Theft Auto</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">64.</span>
+                            <span class="effect-name">Disable Everything</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">65.</span>
+                            <span class="effect-name">Forza Rewind</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">66.</span>
+                            <span class="effect-name">Quick-Time Event</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">67.</span>
+                            <span class="effect-name">Exit To Main Menu</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">68.</span>
+                            <span class="effect-name">Tik Tok Mode</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">69.</span>
+                            <span class="effect-name">Leaking Fuel Tank</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">70.</span>
+                            <span class="effect-name">Refuel Player Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">71.</span>
+                            <span class="effect-name">Realistic Fuel Prices</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">72.</span>
+                            <span class="effect-name">Drag HUD</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">73.</span>
+                            <span class="effect-name">Disable HUD</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">74.</span>
+                            <span class="effect-name">Constant Pausing</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">75.</span>
+                            <span class="effect-name">Disable Pausing</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">76.</span>
+                            <span class="effect-name">FlatOut Style HUD</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">77.</span>
+                            <span class="effect-name">Blow One Opponent's Engine</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">78.</span>
+                            <span class="effect-name">Launch Opponents Backwards</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">79.</span>
+                            <span class="effect-name">Launch Opponents Sideways</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">80.</span>
+                            <span class="effect-name">Launch Opponents Up</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">81.</span>
+                            <span class="effect-name">Spinning Opponents</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">82.</span>
+                            <span class="effect-name">FUCKING RUBBERBAND</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">83.</span>
+                            <span class="effect-name">Disable Rubberbanding</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">84.</span>
+                            <span class="effect-name">Realistic Opponent Performance</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">85.</span>
+                            <span class="effect-name">Puncture Opponents' Tires</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">86.</span>
+                            <span class="effect-name">Zero Opponent Mass</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">87.</span>
+                            <span class="effect-name">Pittable Opponents</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">88.</span>
+                            <span class="effect-name">Disable Opponents' Nitro</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">89.</span>
+                            <span class="effect-name">Lock Opponents In Place</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">90.</span>
+                            <span class="effect-name">Break Tire Physics</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">91.</span>
+                            <span class="effect-name">Remove All Tires</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">92.</span>
+                            <span class="effect-name">Disable Wall Collision</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">93.</span>
+                            <span class="effect-name">Disable World Collision</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">94.</span>
+                            <span class="effect-name">Disable Car To Car Collision</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">95.</span>
+                            <span class="effect-name">Stop Player Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">96.</span>
+                            <span class="effect-name">Launch Player Forward</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">97.</span>
+                            <span class="effect-name">Launch Player Backwards</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">98.</span>
+                            <span class="effect-name">Launch Player Sideways</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">99.</span>
+                            <span class="effect-name">Launch Player Leftways</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">100.</span>
+                            <span class="effect-name">Launch Player Up</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">101.</span>
+                            <span class="effect-name">Launch Player Down</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">102.</span>
+                            <span class="effect-name">Spin Player Out</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">103.</span>
+                            <span class="effect-name">Spin Player Rapidly</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">104.</span>
+                            <span class="effect-name">Infinite Speedbreaker</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">105.</span>
+                            <span class="effect-name">Infinite Player Nitro</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">106.</span>
+                            <span class="effect-name">Disable Speedbreaker</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">107.</span>
+                            <span class="effect-name">Disable Player Nitro</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">108.</span>
+                            <span class="effect-name">Set Heat Level to 1</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">109.</span>
+                            <span class="effect-name">Set Heat Level to 6</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">110.</span>
+                            <span class="effect-name">Decrease Heat Level</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">111.</span>
+                            <span class="effect-name">Increase Heat Level</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">112.</span>
+                            <span class="effect-name">Blow Player's Engine</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">113.</span>
+                            <span class="effect-name">Auto-Drive</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">114.</span>
+                            <span class="effect-name">Spain but the A is silent</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">115.</span>
+                            <span class="effect-name">Aerodynamics +100</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">116.</span>
+                            <span class="effect-name">Handling +10</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">117.</span>
+                            <span class="effect-name">Handling -10</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">118.</span>
+                            <span class="effect-name">Monster Truck Suspension</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">119.</span>
+                            <span class="effect-name">Bouncy Suspension</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">120.</span>
+                            <span class="effect-name">Weak Nitro</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">121.</span>
+                            <span class="effect-name">Strong Nitro</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">122.</span>
+                            <span class="effect-name">Reset Player</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">123.</span>
+                            <span class="effect-name">Puncture One Player Tire</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">124.</span>
+                            <span class="effect-name">Puncture Player's Tires</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">125.</span>
+                            <span class="effect-name">Fix Player's Tires</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">126.</span>
+                            <span class="effect-name">Disable Resetting</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">127.</span>
+                            <span class="effect-name">Disable Instant Bust On Reset</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">128.</span>
+                            <span class="effect-name">Player Car Magnet</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">129.</span>
+                            <span class="effect-name">Player Car Forcefield</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">130.</span>
+                            <span class="effect-name">Disable Player Input</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">131.</span>
+                            <span class="effect-name">Force Player To Gear 1</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">132.</span>
+                            <span class="effect-name">Top Gear</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">133.</span>
+                            <span class="effect-name">Force Player To Reverse Gear</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">134.</span>
+                            <span class="effect-name">Juggernaut</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">135.</span>
+                            <span class="effect-name">Zero Player Mass</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">136.</span>
+                            <span class="effect-name">Piggyback Ride</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">137.</span>
+                            <span class="effect-name">Lock Player In Place</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">138.</span>
+                            <span class="effect-name">Lock Player Rotation</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">139.</span>
+                            <span class="effect-name">Swap Places With Random Opponent</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">140.</span>
+                            <span class="effect-name">Disable Player Physics</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">141.</span>
+                            <span class="effect-name">Broken Steering Wheel</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">142.</span>
+                            <span class="effect-name">Half-Broken Steering Wheel</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">143.</span>
+                            <span class="effect-name">Half-Broken Throttle</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">144.</span>
+                            <span class="effect-name">Connection Problem</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">145.</span>
+                            <span class="effect-name">Teleport To Perfect Hiding Spot</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">146.</span>
+                            <span class="effect-name">Teleport Behind The Old Bridge</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">147.</span>
+                            <span class="effect-name">Nitro Boosting</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">148.</span>
+                            <span class="effect-name">Cruise Control</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">149.</span>
+                            <span class="effect-name">Skyfall</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">150.</span>
+                            <span class="effect-name">Heated Steering</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">151.</span>
+                            <span class="effect-name">Need For Speed</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">152.</span>
+                            <span class="effect-name">ChatGPT Take The Wheel</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">153.</span>
+                            <span class="effect-name">Forced Speedbreaker</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">154.</span>
+                            <span class="effect-name">Enable Game Moment Camera</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">155.</span>
+                            <span class="effect-name">Disable Autosave</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">156.</span>
+                            <span class="effect-name">Disable Visual Treatment</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">157.</span>
+                            <span class="effect-name">Millionaire</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">158.</span>
+                            <span class="effect-name">Anti-Millionaire</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">159.</span>
+                            <span class="effect-name">Force Manual Transmission</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">160.</span>
+                            <span class="effect-name">Force Automatic Transmission</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">161.</span>
+                            <span class="effect-name">Randomize Active Car's Visuals</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">162.</span>
+                            <span class="effect-name">Add A Strike To Active Career Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">163.</span>
+                            <span class="effect-name">Add A Random Tuning Marker</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">164.</span>
+                            <span class="effect-name">Add A Random Bonus Marker</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">165.</span>
+                            <span class="effect-name">Skip Current Song</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">166.</span>
+                            <span class="effect-name">Overwrite Active Career Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">167.</span>
+                            <span class="effect-name">Add 100K Bounty</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">168.</span>
+                            <span class="effect-name">Subtract 100K Bounty</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">169.</span>
+                            <span class="effect-name">Trigger Police Pursuit</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">170.</span>
+                            <span class="effect-name">Add 100K Cost To State</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">171.</span>
+                            <span class="effect-name">Never Busted</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">172.</span>
+                            <span class="effect-name">Disable Cops</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">173.</span>
+                            <span class="effect-name">Disable Hiding Spots</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">174.</span>
+                            <span class="effect-name">Infinite Cop Mass</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">175.</span>
+                            <span class="effect-name">25% Chance Of Getting Busted</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">176.</span>
+                            <span class="effect-name">EVERYONE!!!</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">177.</span>
+                            <span class="effect-name">It's Cross</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">178.</span>
+                            <span class="effect-name">Duh Busted</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">179.</span>
+                            <span class="effect-name">Disable Cop Spawning</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">180.</span>
+                            <span class="effect-name">Invincible Player Tires</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">181.</span>
+                            <span class="effect-name">Invincible Cops</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">182.</span>
+                            <span class="effect-name">Cop Jenga Tower</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">183.</span>
+                            <span class="effect-name">Cops Drop Cash</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">184.</span>
+                            <span class="effect-name">Remove A Lap</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">185.</span>
+                            <span class="effect-name">Add A Lap</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">186.</span>
+                            <span class="effect-name">Add 3 Laps</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">187.</span>
+                            <span class="effect-name">Restart Event</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">188.</span>
+                            <span class="effect-name">Disable Race Barriers</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">189.</span>
+                            <span class="effect-name">False Starts</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">190.</span>
+                            <span class="effect-name">Exit To Menu At 99% Completion</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">191.</span>
+                            <span class="effect-name">Sudden Death</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">192.</span>
+                            <span class="effect-name">Midnight Club Mode</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">193.</span>
+                            <span class="effect-name">Friends Of Blahaj</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">194.</span>
+                            <span class="effect-name">Become Fish</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">195.</span>
+                            <span class="effect-name">Pep</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">196.</span>
+                            <span class="effect-name">Bucket-Ass Car</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">197.</span>
+                            <span class="effect-name">Not A Cat</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">198.</span>
+                            <span class="effect-name">Seriously Weak, Dude</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">199.</span>
+                            <span class="effect-name">British</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">200.</span>
+                            <span class="effect-name">Pixelate The Screen</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">201.</span>
+                            <span class="effect-name">Disco Time</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">202.</span>
+                            <span class="effect-name">High Contrast</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">203.</span>
+                            <span class="effect-name">Low Contrast</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">204.</span>
+                            <span class="effect-name">Inverted Colors</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">205.</span>
+                            <span class="effect-name">Da Ba Dee</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">206.</span>
+                            <span class="effect-name">4:3 Stretched</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">207.</span>
+                            <span class="effect-name">Tunnel Vision</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">208.</span>
+                            <span class="effect-name">Meanwhile In Australia</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">209.</span>
+                            <span class="effect-name">Black & White</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">210.</span>
+                            <span class="effect-name">Saturate The Screen</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">211.</span>
+                            <span class="effect-name">Where's My Glasses?</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">212.</span>
+                            <span class="effect-name">Drunk Mode</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">213.</span>
+                            <span class="effect-name">Obligatory Truck Effect</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">214.</span>
+                            <span class="effect-name">Pepega Bug (Only for BLID NFSMW)</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">215.</span>
+                            <span class="effect-name">pee.</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">216.</span>
+                            <span class="effect-name">Spawn SCP-173</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">217.</span>
+                            <span class="effect-name">Spawn SCP-173 Somewhere</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">218.</span>
+                            <span class="effect-name">8 Down</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">219.</span>
+                            <span class="effect-name">Spawn Bomb Behind Player</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">220.</span>
+                            <span class="effect-name">Give Player Firework Rockets</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">221.</span>
+                            <span class="effect-name">Trans Rights</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">222.</span>
+                            <span class="effect-name">Reverse Text</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">223.</span>
+                            <span class="effect-name">Random Text</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">224.</span>
+                            <span class="effect-name">Shuffled Letters</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">225.</span>
+                            <span class="effect-name">Cocksbot</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">226.</span>
+                            <span class="effect-name">Slow Motion</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">227.</span>
+                            <span class="effect-name">Fast Motion</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">228.</span>
+                            <span class="effect-name">Reverse Superhot</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">229.</span>
+                            <span class="effect-name">Real-Time Speedbreaker</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">230.</span>
+                            <span class="effect-name">Racer AI For Traffic</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">231.</span>
+                            <span class="effect-name">Lobotomized Traffic</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">232.</span>
+                            <span class="effect-name">Spinning Traffic</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">233.</span>
+                            <span class="effect-name">Infinite Traffic Mass</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">234.</span>
+                            <span class="effect-name">Disable Traffic</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">235.</span>
+                            <span class="effect-name">Disable Saving Until Next Profile Reload</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">236.</span>
+                            <span class="effect-name">Get Busted</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">237.</span>
+                            <span class="effect-name">Respawn Props And Pursuit Breakers</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">238.</span>
+                            <span class="effect-name">Invisible World</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">239.</span>
+                            <span class="effect-name">Wireframe Mode</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">240.</span>
+                            <span class="effect-name">Wireframe World</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">241.</span>
+                            <span class="effect-name">Laser-Scanned World</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">242.</span>
+                            <span class="effect-name">Slippery World</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">243.</span>
+                            <span class="effect-name">Grippy World</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">244.</span>
+                            <span class="effect-name">Disable Buildings</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">245.</span>
+                            <span class="effect-name">Inception</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">246.</span>
+                            <span class="effect-name">Acid Trip</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">247.</span>
+                            <span class="effect-name">Rainbow Road</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">248.</span>
+                            <span class="effect-name">Snowy World</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">249.</span>
+                            <span class="effect-name">Uninstall Counter-Strike: Source</span>
+                        </li>
+
+                        <li class="effect-item">
+                            <span class="effect-index">250.</span>
+                            <span class="effect-name">Aduh, Cantiknya</span>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -1605,4 +1632,5 @@
     </div>
 
 </body>
+
 </html>
